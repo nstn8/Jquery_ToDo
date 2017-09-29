@@ -8,17 +8,25 @@
     <script src="js/script.js"></script>
   </head>
   <body>
-    <div id="todo">
+    <div>
       <h1>To Do</h1>
-      <label>
-        <input type="checkbox" name="checkbox" value="value">
-        Mow the lawn
-        
-      </label>
+      <ul id="todo">
+        <li class="open">
+          <label><input type="checkbox" name="checkbox" value="value">Mow the lawn</label>
+        </li>
+        <li class="open">
+          <label><input type="checkbox" name="checkbox" value="value">Make tacos</label>
+        </li>
+      </ul>
     </div>
-
-    <div id="finished">
+    <div>
       <h1>Finished</h1>
+      <ul id="completed">
+        <li class="open">
+          <label><input type="checkbox" name="checkbox" value="value">Fade this out</label>
+        </li>
+        <!-- completed items will move here -->
+      </ul>
     </div>
   </body>
 </html>
