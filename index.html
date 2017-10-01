@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
   </head>
-  <body>
-    <div>
-      <h1>To Do</h1>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>ToDo</h1>
+    </div>
+    <div class="list">
+      <h2>Todo List</h2>
       <ul id="todo">
-        <li class="open">
-          <input type="checkbox" />
-          Mow the lawn
-        </li>
+        <li class="open"><input type="checkbox" />Mow the law</li>
       </ul>
     </div>
-    <div>
-      <h1>Finished</h1>
-      <ul id="completed">
-        <!-- completed items will move here -->
+    <div class="list">
+      <h2>Finished</h2>
+      <ul id="finished">
+      <!-- completed items will move here -->
       </ul>
     </div>
-  </body>
+  </div>
+</body>
 </html>

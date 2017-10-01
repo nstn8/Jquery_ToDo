@@ -1,5 +1,29 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-family: Kalam;
+}
+
+canvas {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 ul {
+  height: 20px;
   list-style: none;
+}
+
+.list {
+
+}
+.header {
+  height: 100px;
+  padding: 10px;
+  text-align: center;
 }
 
 .closed {
