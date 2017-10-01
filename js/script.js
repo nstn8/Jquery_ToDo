@@ -1,20 +1,20 @@
 $(document).ready(function(){
   $(":checkbox").click(function(){
     var that = $(this).parent();
-  if ($(this).is(":checked")){
-    that.fadeOut("slow", function(){
-      $("#completed").append(that);
-      that.fadeIn("slow")
-      })
-    }
-    else {
+    if ($(this).is(":checked")){
       that.fadeOut("slow", function(){
-        $("#undone").append(that);
+        $("#finished").append(that);
+        that.fadeIn("slow")
+      });
+    } else {
+      that.fadeOut("slow", function(){
+        $("#todo").append(that);
         that.fadeIn("slow")
       })
     };
   })
 })
+
 var lines = 50;
 var count = 100;
 var inc = 20;
