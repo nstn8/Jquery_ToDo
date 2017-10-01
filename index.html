@@ -3,22 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
+    <script src="p5/p5.js"></script>
   </head>
-  <body>
-    <div id="todo">
-      <h1>To Do</h1>
-      <label>
-        <input type="checkbox" name="checkbox" value="value">
-        Mow the lawn
-        
-      </label>
-    </div>
+<body>
+  <div id="dogImg">
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>ToDo</h1>
 
-    <div id="finished">
-      <h1>Finished</h1>
     </div>
-  </body>
+    <div class="list">
+      <h2>Todo List</h2>
+      <ul id="todo">
+        <li class="open"><input type="checkbox" />Mow the law</li>
+        <li class="open"><input type="checkbox" />Add more tax money to the tax man</li>
+        <li class="open"><input type="checkbox" />Make more burritos</li>
+        <li class="open"><input type="checkbox" />Try to find balance in society</li>
+      </ul>
+    </div>
+    <div class="list">
+      <h2>Finished</h2>
+      <ul id="finished">
+      <!-- completed items will move here -->
+      </ul>
+    </div>
+  </div>
+</body>
 </html>
