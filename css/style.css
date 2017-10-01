@@ -1,0 +1,31 @@
+body {
+
+}
+#todo {
+
+}
+h1 {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100px;
+}
+li {
+text-align: center;
+list-style: none;
+
+}
+#undone {
+  font-family: cursive;
+}
+#finished {
+
+}
+#completed {
+
+}
+canvas {
+  z-index: -1;
+  position: absolute;
+  top:0;
+  right:0;
+}
