@@ -13,10 +13,10 @@ html, body{
   height: 800px;
   background-image: url('../img/dog.png');
   background-size: 100%;
-  z-index: 2;
+  z-index: -1;
   background-repeat: no-repeat;
   transform: rotate(45deg);
-  position: absolute;
+  position: fixed;
   top:-300px;
   left:-300px;
   opacity: .2;
@@ -36,11 +36,13 @@ canvas {
 }
 
 ul {
-  height: 20px;
   list-style: none;
   margin-bottom: 20px;
 }
 
+li{
+  height: 20px;
+}
 .header {
   height: 100px;
   padding: 10px;
