@@ -1,4 +1,4 @@
-$(document).ready(function($) {
+$(document).ready(function() {
    $(":checkbox").change(function(event) {
      let element = $(this).parents("li");
      if($(this).prop("checked")){
