@@ -1,19 +1,18 @@
-$(document).ready(function(){
-  $(":checkbox").click(function(){
-    var that = $(this).parent();
-    if ($(this).is(":checked")){
-      that.fadeOut("slow", function(){
-        $("#finished").append(that);
-        that.fadeIn("slow")
-      });
-    } else {
-      that.fadeOut("slow", function(){
-        $("#todo").append(that);
-        that.fadeIn("slow")
-      })
-    };
-  })
-})
+
+$(document).ready(function() {
+  $(".task").click(function() {
+    $(this).fadeOut("slow", function() {
+      if($(this).children("input").is(":checked")) {
+        $(this).appendTo("#finished ul").addClass("closed");
+        console.log($(this));
+      } else {
+        $(this).appendTo("#todo ul").removeClass("closed");
+        console.log($(this));
+      }
+    });
+    $(this).fadeIn("slow");
+  });
+});
 
 var lines = 50;
 var inc = 20;
@@ -40,3 +39,4 @@ function setup() {
 window.onresize = function() {
 	setup();
 }
+
