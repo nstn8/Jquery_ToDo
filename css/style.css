@@ -1,31 +1,54 @@
-body {
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Kalam;
+}
 
+.container {
+  min-width: 86%
 }
-#todo {
 
+#dogImg {
+  width: 800px;
+  height: 800px;
+  background-image: url('../img/dog1.png');
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  transform: rotate(45deg);
+  position: fixed;
+  top:-300px;
+  left:-300px;
+  opacity: .2;
 }
-h1 {
-  text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100px;
-}
-li {
-text-align: center;
-list-style: none;
 
+h2 {
+  padding-top: 5px;
+  height: 40px;
+  margin: 0;
 }
-#undone {
-  font-family: cursive;
-}
-#finished {
 
-}
-#completed {
-
-}
 canvas {
   z-index: -1;
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li{
+  height: 20px;
+}
+.header {
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+.done {
+  text-decoration: line-through;
 }

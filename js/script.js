@@ -1,20 +1,17 @@
-$(document).ready(function(){
-  $(":checkbox").click(function(){
-    var that = $(this).parent();
-  if ($(this).is(":checked")){
-    that.fadeOut("slow", function(){
-      $("#completed").append(that);
-      that.fadeIn("slow")
-      })
-    }
-    else {
-      that.fadeOut("slow", function(){
-        $("#undone").append(that);
-        that.fadeIn("slow")
-      })
-    };
-  })
-})
+
+$(document).ready(function() {
+  $(".task").click(function() {
+    $(this).fadeOut("slow", function() {
+      if($(this).children("input").is(":checked")) {
+        $(this).appendTo("#finished").addClass("done");
+      } else {
+        $(this).appendTo("#todo").removeClass("done");
+      }
+    });
+    $(this).fadeIn("slow");
+  });
+});
+
 var lines = 50;
 var inc = 20;
 function setup() {
