@@ -3,11 +3,9 @@ $(document).ready(function() {
   $(".task").click(function() {
     $(this).fadeOut("slow", function() {
       if($(this).children("input").is(":checked")) {
-        $(this).appendTo("#finished ul").addClass("closed");
-        console.log($(this));
+        $(this).appendTo("#finished").addClass("done");
       } else {
-        $(this).appendTo("#todo ul").removeClass("closed");
-        console.log($(this));
+        $(this).appendTo("#todo").removeClass("done");
       }
     });
     $(this).fadeIn("slow");
@@ -39,4 +37,3 @@ function setup() {
 window.onresize = function() {
 	setup();
 }
-
