@@ -5,7 +5,8 @@ html, body{
 }
 
 .container {
-  min-width: 86%
+  min-width: 86%;
+  margin-left: 87px;
 }
 
 #dogImg {
@@ -25,7 +26,7 @@ html, body{
 h2 {
   padding-top: 5px;
   height: 40px;
-  margin: 0;
+  margin-left: 3%;
 }
 
 canvas {
@@ -42,7 +43,11 @@ ul {
 
 li{
   height: 20px;
+  overflow:hidden;
+  white-space:no-wrap;
+  text-overflow:ellipsis;
 }
+
 .header {
   height: 100px;
   padding: 10px;
