@@ -11,7 +11,7 @@ html, body{
 #dogImg {
   width: 800px;
   height: 800px;
-  background-image: url('../img/dog.png');
+  background-image: url('../img/dog1.png');
   background-size: 100%;
   z-index: -1;
   background-repeat: no-repeat;
