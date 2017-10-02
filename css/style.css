@@ -1,69 +1,54 @@
-body {
-    background-color: powderblue;
-    background-image: 
-    background-size: auto;
-    background-position: center;
-  }
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Kalam;
+}
 
+.container {
+  min-width: 86%
+}
 
-h1 {
-  color: midnightblue;
-  font-size: 64px;
-  font-family: Palatino, serif;
-  text-align: center;
-  margin: auto;
+#dogImg {
+  width: 800px;
+  height: 800px;
+  background-image: url('../img/dog.png');
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  transform: rotate(45deg);
+  position: fixed;
+  top:-300px;
+  left:-300px;
+  opacity: .2;
+}
+
+h2 {
+  padding-top: 5px;
+  height: 40px;
+  margin: 0;
+}
+
+canvas {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li{
+  height: 20px;
+}
+.header {
+  height: 100px;
   padding: 10px;
-}
-
-img {
-  width: 100%;
-  /*max-width: 400px;*/
-  height: auto;
-  /*max-height: 400px;*/
-}
-
-
-figure {
-  text-align: center;
-  font-size: 24px;
-  color: darkslategray;
-}
-
-figcaption {
-  color: darkred;
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: Blippo, fantasy;
-
-}
-
-p {
-  font-size: 24px;
-  color: darkolivegreen;
-  font-family: chalkduster, fantasy;
   text-align: center;
 }
 
-.flexBox {
-  height: 500px;
-  display: flex;
-  /*border: 5px solid maroon;*/
-  padding: 0px;
-  justify-content: space-around;
-  align-items: center;
-  /*flex-direction: column;*/
-}
-.flexItem {
-  flex: 0 1 auto;
-  /*background: deepskyblue;*/
-  color: white;
-  margin: 5px;
-  width: 250px;
-}
-.flexItem {
-  flex-grow: 1; /* default 0 */
-}
-.flexItem:nth-child(2) {
-  align-self: flex-end;
+.closed {
+  text-decoration: line-through;
 }
