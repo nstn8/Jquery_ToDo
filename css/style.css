@@ -5,8 +5,8 @@ html, body{
 }
 
 .container {
-  min-width: 86%;
-  margin-left: 87px;
+  /*min-width: 86%;*/
+  /*margin-left: 87px;*/
 }
 
 #dogImg {
@@ -39,13 +39,6 @@ canvas {
 ul {
   list-style: none;
   margin-bottom: 20px;
-}
-
-li{
-  height: 20px;
-  overflow:hidden;
-  white-space:no-wrap;
-  text-overflow:ellipsis;
 }
 
 .header {
